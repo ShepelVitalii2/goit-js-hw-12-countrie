@@ -11,9 +11,6 @@ const savedTheme = localStorage.getItem(STORAGE_KEY);
 bodyEl.classList.add(theme.LIGHT);
 switchTheme.addEventListener('change', onSwitchThemeclick);
 
-if (savedTheme === '') {
-  bodyEl.classList.add(theme.LIGHT);
-}
 if (savedTheme === 'false') {
   bodyEl.classList.remove(theme.LIGHT);
   bodyEl.classList.add(theme.DARK);
